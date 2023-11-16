@@ -3,6 +3,7 @@
 */
 
 interface PageProps {
+  pageInfo(): void;
   title: string;
 }
 
