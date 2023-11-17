@@ -13,15 +13,8 @@ enum DaysOfWeek {
   Sunday,
 }
 
-function isWeekend(day: number) {
-  let isTodayWeekend: boolean;
-
-  if (day === DaysOfWeek.Saturday || day === DaysOfWeek.Sunday) {
-    isTodayWeekend = true;
-  } else {
-    isTodayWeekend = false;
-  }
-  return isTodayWeekend;
+function isWeekend(day: number): boolean {
+  return day === DaysOfWeek.Saturday || day === DaysOfWeek.Sunday;
 }
 
 export {};
